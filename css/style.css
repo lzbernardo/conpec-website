@@ -224,7 +224,7 @@ header .intro-text {
 
 @media (min-width: 768px) {
 	header .intro-text {
-	    padding-top: 300px;
+	    padding-top: 240px;
 	    padding-bottom: 200px;
 	}
 }
@@ -234,7 +234,7 @@ header .intro-text .intro-lead-in {
     font-style: italic;
     font-size: 22px;
     line-height: 22px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 @media (min-width: 768px) {
@@ -259,8 +259,8 @@ header .intro-text .intro-heading {
 	header .intro-text .intro-heading {
 	    text-transform: uppercase;
 	    font-weight: 700;
-	    font-size: 75px;
-	    line-height: 75px;
+	    font-size: 65px;
+	    line-height: 65px;
 	    margin-bottom: 50px;
 	}
 }
@@ -284,26 +284,6 @@ header .intro-text .intro-heading {
 /*--------------------
 4.1. About
 --------------------*/
-
-section {
-  overflow: hidden;
-}
-
-#tech img {
-    display:block;
-    position: relative;
-    left: 0;
-    top: 0;
-    z-index: 1;
-    width: 100%;
-    height: auto;
-    opacity: 0.6;
-    -ms-background-size: cover;
--o-background-size: cover;
--moz-background-size: cover;
--webkit-background-size: cover;
-background-size: cover;
-}
 
 .mz-module-about h3 {
     font-weight: 300;
@@ -841,6 +821,8 @@ a:hover, a:focus, a:active {
   line-height: 24px;
   color: #ffffff;
   position: relative;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 .fancy-button.bg-gradient1 {
   text-shadow: 0px 0px 1px #BF4C28;
@@ -973,7 +955,7 @@ a:hover, a:focus, a:active {
   background: linear-gradient(25deg, #FC3D7C 0%, #F76A34 80%, #F76A34 100%);
 }
 .bg-gradient4:focus span {
-  box-shadow: 0 0 9px #00FFF8;
+  box-shadow: 0 0 1px #fff;
 }
 .bg-gradient4:active span {
   -webkit-filter: brightness(0.85) contrast(1.3);
