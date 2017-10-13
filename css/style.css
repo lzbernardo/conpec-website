@@ -102,7 +102,7 @@ section {
 	color: #fec503
 }
 .navbar-default .navbar-collapse {
-	border-color: rgba(255,255,255,.02)
+	border-color: rgba(255,255,255,.02);
 }
 .navbar-default .navbar-toggle {
 	background-color: #fed136;
@@ -128,7 +128,7 @@ section {
 }
 
 .navbar-default .nav li a:after {
-    background: #ff6708;
+    background: #fff;
     content: '';
     display: block;
     height: 3px;
@@ -189,7 +189,12 @@ section {
 	}
 	.navbar-default.navbar-shrink {
 		background-color: #151515;
-		padding: 10px 0
+
+      background: #fc3d5a;
+      background: -webkit-linear-gradient(-15deg, #fc3d5a 0%, #f75334 80%, #fb591b 100%);
+      background: -webkit-linear-gradient(-15deg, #fc3d5a 0%, #f75334 80%, #fb591b 100%);
+      background: linear-gradient(-15deg, #fc3d5a 0%, #f75334 80%, #fb591b 100%);
+		padding: 10px 0;
 	}
 	.navbar-default.navbar-shrink .navbar-brand {
 		font-size: 1.5em
@@ -230,8 +235,7 @@ header .intro-text {
 }
 
 header .intro-text .intro-lead-in {
-    font-family: "Playfair Display",sans-serif;
-    font-style: italic;
+    font-family: /*"Playfair Display"*/ "Roboto",sans-serif;
     font-size: 22px;
     line-height: 22px;
     margin-bottom: 20px;
@@ -239,11 +243,22 @@ header .intro-text .intro-lead-in {
 
 @media (min-width: 768px) {
 	header .intro-text .intro-lead-in {
-	    font-family: "Playfair Display",sans-serif;
-	    font-style: italic;
-	    font-size: 40px;
-	    line-height: 40px;
-	    margin-bottom: 25px;
+      background-color: rgba(0,0,0,0);
+      display: inline-block;
+      margin-bottom: 8px;
+	}
+}
+
+@media (min-width: 768px) {
+	header .intro-text .intro-lead-in h1 {
+	    font-family: /*"Playfair Display"*/ "Roboto",sans-serif;
+	    font-size: 30px;
+	    line-height: 30px;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #fff;
+      margin: 0;
+      text-shadow: 1px 1px 6px rgba(0,0,0,0.1);
 	}
 }
 
@@ -257,6 +272,7 @@ header .intro-text .intro-heading {
 
 @media (min-width: 768px) {
 	header .intro-text .intro-heading {
+      font-family: "Lato", sans-serif;
 	    text-transform: uppercase;
 	    font-weight: 700;
 	    font-size: 65px;
@@ -270,8 +286,10 @@ header .intro-text .intro-heading {
 --------------------*/
 
 .section-title h2 {
-    font-size: 34px;
-    text-transform: capitalize;
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    font-weight: 900px;
 }
 
 .section-title p {
@@ -784,10 +802,10 @@ font-size: 11px;
 }
 
 .bg-gradient4 span {
-  background: #F6682F;
-  background: -webkit-linear-gradient(180deg, #F6682F 0%, #F6682F 80%, #F6682F 100%);
-  background: -webkit-linear-gradient(top, #F6682F 0%, #F6682F 80%, #F6682F 100%);
-  background: linear-gradient(180deg, #F6682F 0%, #F6682F 80%, #F6682F 100%);
+  background: #fc3d3d;
+  background: -webkit-linear-gradient(-25deg, #fc3d3d 0%, #F76A34 80%, #f76f34 100%);
+  background: -webkit-linear-gradient(115deg, #fc3d3d 0%, #F76A34 80%, #f76f34 100%);
+  background: linear-gradient(-25deg, #fc3d3d 0%, #F76A34 80%, #f76f34 100%);
 }
 
 /* General */
@@ -813,16 +831,17 @@ a:hover, a:focus, a:active {
 .fancy-button {
   display: inline-block;
   margin: 20px;
-  font-family: 'Heebo', Helvetica, Arial, sans-serif;
-  font-weight: 500;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  font-weight: 400;
   font-size: 16px;
   letter-spacing: 0.07em;
   text-transform: uppercase;
   line-height: 24px;
   color: #ffffff;
   position: relative;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  overflow: hidden;
 }
 .fancy-button.bg-gradient1 {
   text-shadow: 0px 0px 1px #BF4C28;
@@ -847,8 +866,8 @@ a:hover, a:focus, a:active {
           filter: blur(14px) brightness(0.9);
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .fancy-button i {
   margin-top: -2px;
@@ -864,8 +883,8 @@ a:hover, a:focus, a:active {
   will-change: transform, filter;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .fancy-button:focus {
   color: #ffffff;
@@ -910,8 +929,8 @@ a:hover, a:focus, a:active {
           filter: brightness(1) contrast(1);
   -webkit-transform: scale(1);
           transform: scale(1);
-  -webkit-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 .fancy-button.pop-onhover:hover:active:before {
   bottom: 0;
@@ -931,8 +950,8 @@ a:hover, a:focus, a:active {
 .bg-gradient4:before {
   bottom: 2px;
   opacity: 0.6;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .bg-gradient4 {
@@ -942,6 +961,7 @@ a:hover, a:focus, a:active {
 .bg-gradient4 span {
   outline: 0px solid transparent;
 }
+
 .bg-gradient4:hover span {
   background: #FC3D7C;
   background: -webkit-linear-gradient(-25deg, #FC3D7C 0%, #F76A34 80%, #F76A34 100%);
