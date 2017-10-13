@@ -1,9 +1,13 @@
 $(window).scroll(function() {
     if ($(document).scrollTop() > 150) {
         $('.navbar').addClass('navbar-shrink');
+        $('.cllogo').removeClass('scrolled-vis');
+        $('.bwlogo').addClass('scrolled-vis');
     }
     else {
         $('.navbar').removeClass('navbar-shrink');
+        $('.cllogo').addClass('scrolled-vis');
+        $('.bwlogo').removeClass('scrolled-vis');
     }
 });
 
