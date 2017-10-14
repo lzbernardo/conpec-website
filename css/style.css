@@ -686,7 +686,12 @@ section#contact .form-group input, section#contact .form-group textarea {
 
 footer {
     padding: 30px;
+    height: 200px;
     background-color: #000;
+    background: #2354c1;
+    background: -webkit-linear-gradient(-20deg, #2354c1 0%, rgba(74, 13, 140, 0.89) 100%);
+    background: -webkit-linear-gradient(-20deg, #2354c1 0%, rgba(74, 13, 140, 0.89) 100%);
+    background: linear-gradient(-20deg, #2354c1 0%, rgba(74, 13, 140, 0.89) 100%);
 }
 
 footer p {
