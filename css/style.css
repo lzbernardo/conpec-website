@@ -322,6 +322,14 @@ header .intro-text .intro-heading {
 4.1. About
 --------------------*/
 
+#about {
+
+    background: #2354c1;
+    background: -webkit-linear-gradient(-20deg, #2354c1 0%, rgba(74, 13, 140, 0.89) 100%);
+    background: -webkit-linear-gradient(-20deg, #2354c1 0%, rgba(74, 13, 140, 0.89) 100%);
+    background: linear-gradient(-20deg, #2354c1 0%, rgba(74, 13, 140, 0.89) 100%);
+}
+
 .mz-module-about h3 {
     font-weight: 300;
     font-size: 14px;
