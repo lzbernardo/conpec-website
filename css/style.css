@@ -686,7 +686,6 @@ section#contact .form-group input, section#contact .form-group textarea {
 
 footer {
     padding: 30px;
-    height: 200px;
     background-color: #000;
     background: #2354c1;
     background: -webkit-linear-gradient(-20deg, #2354c1 0%, rgba(74, 13, 140, 0.89) 100%);
@@ -1069,4 +1068,82 @@ and (max-width : 480px) {
     margin-top: 7px;
     font-size: 20px;
 }
+}
+
+/*------------------------------------------------------------------
+      						RESET STYLES
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+      						SECTION STYLES
+-------------------------------------------------------------------*/
+
+
+.row ul {
+	text-align: center;
+}
+
+.row a {
+	padding: 10px;
+    border-radius: 100%;
+    z-index: 3;
+}
+.row a:first-child {
+  padding: 10px 12px 10px 12px;
+}
+.row a:nth-child(2) {
+  padding: 10px 9px 10px 11px;
+}
+.row a:nth-child(3) {
+  padding: 10px 8px 10px 12px;
+}
+
+.row i {
+  font-size: 1.2em;
+	vertical-align: middle;
+
+  color: rgba(255,255,255,0.9);
+	transition: all .3s ease;
+  color: -webkit-linear-gradient(-15deg, #fc3d5a 0%, #f75334 80%, #fb591b 100%);
+  color: -webkit-linear-gradient(-15deg, #fc3d5a 0%, #f75334 80%, #fb591b 100%);
+  color: linear-gradient(-15deg, #fc3d5a 0%, #f75334 80%, #fb591b 100%);
+}
+
+.row a:nth-child(3) i {
+	margin-top: -0.1em;
+}
+.row a:hover i {
+  color: white;
+  margin-top: -8px;
+}
+
+
+.mwlove {
+  font-size: 12px;
+  color: #fff;
+  font-family: 'Gloria Hallelujah';
+  transform: translateX(-50%) translateY(-50%);
+}
+.mwlove a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold
+}
+.mwlove .fa {
+  color: #f75331 /*#E90606*/;
+  margin: 0 3px;
+  font-size: 12px;
+  animation: pound 0.35s infinite alternate;
+  -webkit-animation: pound 0.35s infinite alternate;
+}
+
+@-webkit-keyframes pound {
+  to {
+    transform: scale(1.2);
+  }
+}
+@keyframes pound {
+  to {
+    transform: scale(1.2);
+  }
 }
