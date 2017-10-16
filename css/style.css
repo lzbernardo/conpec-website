@@ -1079,26 +1079,26 @@ and (max-width : 480px) {
 -------------------------------------------------------------------*/
 
 
-.row ul {
+footer .row ul {
 	text-align: center;
 }
 
-.row a {
+footer .row a {
 	padding: 10px;
     border-radius: 100%;
     z-index: 3;
 }
-.row a:first-child {
+footer .row a:first-child {
   padding: 10px 12px 10px 12px;
 }
-.row a:nth-child(2) {
+footer .row a:nth-child(2) {
   padding: 10px 9px 10px 11px;
 }
-.row a:nth-child(3) {
+footer .row a:nth-child(3) {
   padding: 10px 8px 10px 12px;
 }
 
-.row i {
+footer .row i {
   font-size: 1.2em;
 	vertical-align: middle;
 
@@ -1109,10 +1109,10 @@ and (max-width : 480px) {
   color: linear-gradient(-15deg, #fc3d5a 0%, #f75334 80%, #fb591b 100%);
 }
 
-.row a:nth-child(3) i {
+footer .row a:nth-child(3) i {
 	margin-top: -0.1em;
 }
-.row a:hover i {
+footer .row a:hover i {
   color: white;
   margin-top: -8px;
 }
